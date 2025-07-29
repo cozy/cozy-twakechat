@@ -1,5 +1,10 @@
 @require 'settings/breakpoints.styl'
 
+// Disable vertical overscroll behavior (bouncing) because it is too aggressive when scrolling with the trackpad on MacOS
+:root
+    overscroll-behavior-y none
+    overflow-y hidden
+
 body
     display flex
     height 100vh
