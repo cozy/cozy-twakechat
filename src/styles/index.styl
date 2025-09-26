@@ -5,9 +5,13 @@
     overscroll-behavior-y none
     overflow-y hidden
 
+// We need !important to override default style added by cozy-ui.
+
+html
+    height 100% !important // @stylint ignore
+
 body
-    display flex
-    height 100vh
+    height 100% !important // @stylint ignore
 
 iframe
     +medium-screen()
