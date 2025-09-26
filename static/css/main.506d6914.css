@@ -1,0 +1,1 @@
+:root{overscroll-behavior-y:none;overflow-y:hidden}body{height:100vh;display:flex}iframe{height:calc(100% - 3rem);padding-top:3rem}
