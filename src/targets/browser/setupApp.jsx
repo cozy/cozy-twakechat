@@ -27,7 +27,8 @@ const makeClient = container => {
       version: manifest.version
     },
     schema,
-    store: true
+    store: true,
+    autoHydrate: true
   })
 
   return client
