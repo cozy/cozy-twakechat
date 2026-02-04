@@ -1,7 +1,9 @@
 process.env.TZ = 'UTC'
 
 module.exports = {
-  testURL: 'http://localhost/',
+  testEnvironmentOptions: {
+    url: 'http://localhost/'
+  },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'styl'],
   setupFiles: ['<rootDir>/test/jestLib/setup.js'],
   setupFilesAfterEnv: ['<rootDir>/test/jestLib/setupAfterEnv.js'],
@@ -11,6 +13,7 @@ module.exports = {
     // identity-obj-proxy module is installed by cozy-scripts
     '.styl$': 'identity-obj-proxy',
     '^cozy-client$': 'cozy-client/dist/index',
+    '^@/(.*)': '<rootDir>/src/$1',
     '^src/(.*)': '<rootDir>/src/$1',
     '^test/(.*)': '<rootDir>/test/$1'
   },
