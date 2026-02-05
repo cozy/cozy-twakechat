@@ -17,7 +17,7 @@ export const fetchAuthStatus = async ({ apiLoginUrl }) => {
   return !!(statusData.authenticated && statusData.homeserver)
 }
 
-export const fetchRedirectLoginUrl = async ({ apiLoginUrl }) => {
+export const fetchAuthLoginUrl = async ({ apiLoginUrl }) => {
   const url = `${apiLoginUrl.origin}/api/auth/login-url`
   const loginUrlResponse = await fetch(url, {
     credentials: 'include'
