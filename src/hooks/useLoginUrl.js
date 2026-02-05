@@ -6,7 +6,7 @@ import Minilog from 'cozy-minilog'
 import {
   buildApiLoginUrl,
   fetchAuthStatus,
-  fetchRedirectLoginUrl
+  fetchAuthLoginUrl
 } from '@/helpers/apiLogin'
 import {
   getFreshLoginParams,
@@ -41,7 +41,7 @@ const getLoginUrl = async ({ appUrl, apiLoginUrl }) => {
       return appUrl.toString()
     } else {
       log.info('🔵 Not authenticated')
-      window.location.href = await fetchRedirectLoginUrl({ apiLoginUrl })
+      window.location.href = await fetchAuthLoginUrl({ apiLoginUrl })
     }
   }
 }
