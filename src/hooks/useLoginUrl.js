@@ -8,6 +8,7 @@ import {
   fetchAuthStatus,
   fetchAuthLoginUrl
 } from '@/helpers/apiLogin'
+import { buildAppUrl } from '@/helpers/appData'
 import {
   getFreshLoginParams,
   isFreshLogin,
@@ -37,7 +38,6 @@ const getLoginUrl = async ({ appUrl, apiLoginUrl }) => {
     const isAuthenticated = await fetchAuthStatus({ apiLoginUrl })
     if (isAuthenticated) {
       log.info('🔵 Authenticated')
-      // TODO: not correct URL? Need to add orgId ?
       return appUrl.toString()
     } else {
       log.info('🔵 Not authenticated')
@@ -46,7 +46,7 @@ const getLoginUrl = async ({ appUrl, apiLoginUrl }) => {
   }
 }
 
-export const useLoginUrl = embeddedAppUrl => {
+export const useLoginUrl = () => {
   const client = useClient()
   const [loginUrl, setLoginUrl] = useState()
 
@@ -58,8 +58,8 @@ export const useLoginUrl = embeddedAppUrl => {
       const domain = await getInstanceDomain(client)
       log.info('Domain:', domain)
 
-      const appUrl = new URL(embeddedAppUrl)
-      log.info('App URL:', appUrl.toString())
+      const appUrl = await buildAppUrl({ orgId, domain })
+      log.info('AppURL:', appUrl.toString())
 
       const apiLoginUrl = await buildApiLoginUrl({ orgId, domain })
       log.info('API login URL:', apiLoginUrl.toString())
