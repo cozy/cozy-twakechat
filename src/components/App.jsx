@@ -8,7 +8,15 @@ import { useLoginUrl } from '@/hooks/useLoginUrl'
 const Wrapper = () => {
   const embeddedAppUrl = flag('chat.embedded-app-url')
 
-  const url = useLoginUrl(embeddedAppUrl)
+  if (embeddedAppUrl) {
+    return <App url={embeddedAppUrl} />
+  }
+
+  return <LoginWrapper />
+}
+
+const LoginWrapper = () => {
+  const url = useLoginUrl()
 
   if (!url) return null
 
