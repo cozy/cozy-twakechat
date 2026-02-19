@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useExternalBridge } from 'cozy-external-bridge/container'
+import { useExternalBridge } from 'cozy-external-bridge-container'
 import flag from 'cozy-flags'
 
 import { useLoginUrl } from '@/hooks/useLoginUrl'
