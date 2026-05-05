@@ -32,7 +32,7 @@ const App = ({ url }) => {
     <iframe
       id="embeddedApp"
       src={isReady ? urlToLoad : null}
-      allow="clipboard-read; clipboard-write"
+      allow="microphone; clipboard-read; clipboard-write"
     ></iframe>
   )
 }
