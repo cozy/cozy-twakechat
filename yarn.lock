@@ -4834,10 +4834,10 @@ cozy-app-publish@^0.42.1:
     tar "^6.1.11"
     verror "^1.10.1"
 
-cozy-bar@^33.3.0:
-  version "33.3.0"
-  resolved "https://registry.yarnpkg.com/cozy-bar/-/cozy-bar-33.3.0.tgz#822ffb179a330bb895502a60ff38ef9d63f1eb5d"
-  integrity sha512-4nezHLXHoOAjA70BhQjoDLY9/S8Dw44ySHxkU3wc+b9MCcTssyNXh99nxgKIsN19q/ReSq1FDFjl6+TUv8E6ZA==
+cozy-bar@^33.3.3:
+  version "33.3.3"
+  resolved "https://registry.yarnpkg.com/cozy-bar/-/cozy-bar-33.3.3.tgz#b7ea8f8360bb4f931a32e60ec75414b85a2d2f42"
+  integrity sha512-DT0PkVckCgfupPktUivs+P7R3hfSSTC3zD0QRr7a3vtUaBWzFoO9Y3AeHK0g+VMQbZGoRPHGvpBf+EtMgc9hGA==
   dependencies:
     classnames "^2.5.1"
     lodash.set "^4.3.2"
@@ -4932,10 +4932,10 @@ cozy-intent@^2.30.2:
     cozy-minilog "^3.10.0"
     post-me "0.4.5"
 
-cozy-interapp@^0.5.4:
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/cozy-interapp/-/cozy-interapp-0.5.7.tgz#75cafe1732ad660e2caf1ccf412f302594705f39"
-  integrity sha512-laIL/ATYV9oZnmqS+LMoO9qzk8XjJ1v2/YrA1Po2rI8ia/MDgjYO07424x2RuvHhNOBPGjD+JmqwQ0rNDlLW+Q==
+cozy-interapp@^0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/cozy-interapp/-/cozy-interapp-0.17.1.tgz#c17e45d14d1f6f0e2a2b2a9f9316dc822761d063"
+  integrity sha512-o649e0UK2yla07x92a9pB4P1B2tP3LwHC6GMpWGMvkhyTwkZpzHllWBCO4VBmQXHJAKbzWgIBmDeapgw0A/zgQ==
 
 cozy-logger@^1.17.0:
   version "1.17.0"
@@ -5003,13 +5003,12 @@ cozy-tsconfig@^1.8.1:
   resolved "https://registry.yarnpkg.com/cozy-tsconfig/-/cozy-tsconfig-1.8.1.tgz#5f206f4e6e041a4afc6691098264ba630bdeb7e2"
   integrity sha512-/9QBxK8Tc12O2ojuyRpSMjPpXpqldVvzfNB1+/nPD+IkIBkU+mqxpHYJwKWjNYHGraCSy69mIwt9J3aiaJdz9w==
 
-cozy-ui-plus@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/cozy-ui-plus/-/cozy-ui-plus-6.1.1.tgz#a505bde8c2b436e0901234007425a837a78d2fcf"
-  integrity sha512-8mVlXz03QjONMi9EhHeadT7cXkD+vmHL6HIXIZXPM+9NnS8hO8Py4nbzgmn13I9OlB6swLx8xyXPx2By8avYmA==
+cozy-ui-plus@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/cozy-ui-plus/-/cozy-ui-plus-8.0.1.tgz#4f32fee74aeb6610801566d885e081fd7df57585"
+  integrity sha512-+1iA0VT4KdZv5HjKCfuzBbwp6Kw6VoliEJb2KJROfJougf6Olct82MktxARzh0PThwx+ZnFFcR5J4/PQxLqghA==
   dependencies:
     classnames "^2.5.1"
-    cozy-interapp "^0.5.4"
     filesize "8.0.7"
     final-form "4.20.9"
     final-form-arrays "3.1.0"
