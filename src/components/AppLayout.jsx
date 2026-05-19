@@ -13,6 +13,11 @@ const AppLayout = () => {
         searchOptions={{ enabled: false }}
         appIcon={Chat}
         appTextIcon={ChatText}
+        componentsProps={{
+          CozyTheme: {
+            type: 'light'
+          }
+        }}
       />
       <Outlet />
     </>
