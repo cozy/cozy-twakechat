@@ -1,11 +1,5 @@
-import flag from 'cozy-flags'
-
 export const buildApiLoginUrl = async ({ orgId, domain }) => {
-  if (flag('chat.new-backend-url')) {
-    return new URL(`https://api-login-${orgId}.tc-apps.${domain}`)
-  } else {
-    return new URL(`https://api-login-${orgId}.${domain}`)
-  }
+  return new URL(`https://api-login-${orgId}.tc-apps.${domain}`)
 }
 
 export const fetchAuthStatus = async ({ apiLoginUrl }) => {
