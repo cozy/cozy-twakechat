@@ -13,6 +13,7 @@
     "name": "Twake Workplace",
     "url": "https://twake.app"
   },
+  "client_url_flag": "chat.embedded-app-url",
   "routes": {
     "/": {
       "folder": "/",
