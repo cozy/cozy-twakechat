@@ -43,6 +43,11 @@
       "verbs": ["GET"],
       "selector": "name",
       "values": ["Home"]
+    },
+    "chatConversations": {
+      "description": "Required by the Scribe to rewrite a draft with Twake Assistant",
+      "type": "io.cozy.ai.chat.conversations",
+      "verbs": ["POST"]
     }
   },
   "mobile": {
